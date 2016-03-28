@@ -1,10 +1,18 @@
 /* CSS Entry Point */
-$title: #D1DBFF;
-$border: #737373;
+$title: #2FC5D8;
+$border: #2AB3C5;
 
 *{
 	box-sizing: border-box;
 	margin:0;
+	font-family: 'Arimo', sans-serif;
+}
+
+.app{
+	margin: 20px;
+}
+h3, p{
+		padding: 10px;
 }
 
 .accordion{
@@ -18,11 +26,13 @@ $border: #737373;
 		border-bottom: none;
 	}
 	h3{
+		color: white;
+		letter-spacing: 1px;
 		background-color: $title;
+		border-bottom:.5px solid $border;
 	}
 	p{
 		overflow: hidden;
-		padding: 10px;
 		transition: all 1s;
 		max-height: 200px;
 	}
@@ -33,7 +43,7 @@ $border: #737373;
 		}
 	}
 	&.showing{
-		
+
 	}
 }
 
