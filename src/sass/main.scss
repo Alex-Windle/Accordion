@@ -1,1 +1,22 @@
 /* CSS Entry Point */
+$title: #D1DBFF;
+$border: #737373;
+
+.app{
+	width: 500px;
+	border: 1px solid $border;
+}
+
+.section{}
+
+.title{
+	background-color: #D1DBFF;
+	h3{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.paragraph{
+		padding: 4px;
+}
