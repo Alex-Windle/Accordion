@@ -2,21 +2,38 @@
 $title: #D1DBFF;
 $border: #737373;
 
-.app{
-	width: 500px;
-	border: 1px solid $border;
+*{
+	box-sizing: border-box;
+	margin:0;
 }
 
-.section{}
+.accordion{
+	border:.5px solid $border;
+	width: 500px;
+}
 
-.title{
-	background-color: #D1DBFF;
+.section{
+	border-bottom:.5px solid $border;
+	&:last-child{
+		border-bottom: none;
+	}
 	h3{
-		margin: 0;
-		padding: 0;
+		background-color: $title;
+	}
+	p{
+		overflow: hidden;
+		padding: 10px;
+		transition: all 1s;
+		max-height: 200px;
+	}
+	&.hidden{
+		p{
+			max-height:0;
+			padding:0;
+		}
+	}
+	&.showing{
+		
 	}
 }
 
-.paragraph{
-		padding: 4px;
-}
