@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 $('h3').on('click', function(event){
 
-	$('section').addClass('hidden');
+	$('.section').addClass('hidden');
 
 	var h3=event.currentTarget;
 	var $h3=$(h3);
